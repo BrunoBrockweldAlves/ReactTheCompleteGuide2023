@@ -1,4 +1,4 @@
-import ExpenseItem from "./components/ExpenseItem";
+import ExpenseFormater from "./components/ExpenseFormater.js";
 
 function App() {
     const expenses = [
@@ -26,10 +26,7 @@ function App() {
   return (
     <div>
       <h2>Let's get started!</h2>
-      <ExpenseItem expense={expenses[0]}></ExpenseItem>
-      <ExpenseItem expense={expenses[1]}></ExpenseItem>
-      <ExpenseItem expense={expenses[2]}></ExpenseItem>
-      <ExpenseItem expense={expenses[3]}></ExpenseItem>
+      <ExpenseFormater expenses={expenses}/>
     </div>
   );
 }
