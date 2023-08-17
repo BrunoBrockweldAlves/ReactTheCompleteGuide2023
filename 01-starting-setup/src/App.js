@@ -24,9 +24,13 @@ function App() {
     },
   ];
 
+  const addExpenseHandler = (value) => {
+    expenses.push(value);
+  };
+
   return (
     <div>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
       <ExpenseFormater expenses={expenses} />
     </div>
   );
